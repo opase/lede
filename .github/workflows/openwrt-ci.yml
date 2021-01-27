@@ -140,18 +140,16 @@ jobs:
 
           # 常用LuCI插件选择:
            cat >> .config <<EOF
-           CONFIG_PACKAGE_luci-app-advanced=y
            CONFIG_PACKAGE_luci-app-firewall=y
-           CONFIG_PACKAGE_luci-app-opkg=y
+           CONFIG_PACKAGE_luci-app-minidlna=y
            CONFIG_PACKAGE_luci-app-uhttpd=y
            CONFIG_PACKAGE_luci-app-upnp=y
            CONFIG_PACKAGE_luci-app-autoreboot=y
-           CONFIG_PACKAGE_luci-app-turboacc=y
-           CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_flow-offload=y
-           CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_shortcut-fe=n
-           CONFIG_KERNEL_MIPS_FPU_EMULATOR=y
            CONFIG_PACKAGE_luci-app-guest-wifi=y
            CONFIG_PACKAGE_luci-app-ramfree=y
+           CONFIG_PACKAGE_luci-app-webadmin=y
+           CONFIG_PACKAGE_luci-app-wrtbwmon=y
+           CONFIG_PACKAGE_luci-app-ttyd=y
            EOF
 
           # LuCI主题:
